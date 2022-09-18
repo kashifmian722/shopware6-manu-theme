@@ -54,13 +54,6 @@ Custom styling for filter panel.
     }
 }
 
-@media (max-width: 360px ) {
-    .cms-element-sidebar-filter {
-        width: 280px;
-        margin: 0 auto;
-    }
-}
-
 @include media-breakpoint-up(lg) {
     .filter-panel-items-container {
         .filter-overlay {

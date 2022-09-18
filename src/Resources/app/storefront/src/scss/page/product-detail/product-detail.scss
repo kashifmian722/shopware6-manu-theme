@@ -14,15 +14,6 @@ Contains custom styles for the product detail page.
 
 */
 
-/* padding for info on detail-pages */
-.product-detail {
-    padding-top: 55px;
-
-    .product-detail-cross-selling {
-        display: none;
-    }
-}
-
 .is-ctl-product {
     .container-main {
         padding-bottom: 0;
@@ -97,20 +88,6 @@ Contains custom styles for the product detail page.
 
 .product-detail-form-container {
     order: 3;
-
-    &.product-detail-wishlist {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .buy-widget {
-            width: 90%;
-        }
-        .product-wishlist {
-            margin-left: 1rem;
-            margin-top: 0px;
-        }
-    }
 }
 
 .product-detail-ordernumber-container {
@@ -193,8 +170,7 @@ Contains custom styles for the product detail page.
 }
 
 .product-detail-properties-table {
-    th,
-    td {
+    th, td {
         padding: $spacer-sm 0;
     }
 }
@@ -204,7 +180,7 @@ Contains custom styles for the product detail page.
     font-size: $font-size-lg;
     margin-left: $spacer-lg;
     margin-bottom: 3px;
-    opacity: 0.5;
+    opacity: .5;
 }
 
 @include media-breakpoint-up(md) {
@@ -261,6 +237,7 @@ Contains custom styles for the product detail page.
                 .gallery-slider-thumbnails-controls-prev {
                     top: -15px;
                 }
+
             }
             &.is-underneath {
                 margin-bottom: $spacer;
@@ -287,6 +264,7 @@ Contains custom styles for the product detail page.
     .product-detail-content {
         margin-bottom: $spacer * 4;
     }
+
 }
 
 @include media-breakpoint-up(lg) {
@@ -306,23 +284,5 @@ Contains custom styles for the product detail page.
 
     .product-detail-content {
         margin-bottom: $spacer * 6;
-    }
-}
-
-.wishlist-button {
-    margin-bottom: 1rem;
-    .product-wishlist-action {
-        padding: 0.125rem 0.75rem;
-        font-size: 1rem;
-        line-height: 2.375rem;
-        border-radius: 5px;
-        background-color: $sw-color-brand-primary;
-        color: white;
-    }
-}
-
-.product-wishlist {
-    .product-wishlist-btn-content {
-        text-decoration: none;
     }
 }

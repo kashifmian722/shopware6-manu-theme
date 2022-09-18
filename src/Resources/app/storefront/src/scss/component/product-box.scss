@@ -67,7 +67,7 @@ Custom styling for product box component.
 .product-price-unit,
 .product-description {
     color: $sw-text-color;
-    opacity: 0.5;
+    opacity: .5;
 }
 
 .product-description {
@@ -95,7 +95,7 @@ Custom styling for product box component.
 
 .product-price {
     .list-price {
-        opacity: 0.5;
+        opacity: .5;
     }
 }
 
@@ -132,6 +132,7 @@ Custom styling for product box component.
         color: $success;
         border-color: $success;
         background-color: rgba($color: $success, $alpha: 0.2);
+
     }
 }
 
@@ -150,34 +151,6 @@ Custom styling for product box component.
     .product-price-info {
         .product-price {
             font-size: 1.5rem;
-        }
-    }
-}
-
-.product-action {
-    &.wishlist-button {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .buy-widget {
-            width: 78%;
-        }
-        .product-wishlist {
-            margin-top: 0px;
-            .product-wishlist-action-circle {
-                position: relative;
-                bottom: 0px;
-                right: 0px;
-            }
-        }
-    }
-}
-
-.box-single-column {
-    .product-wishlist {
-        .product-wishlist-action-circle {
-            right: 2rem;
         }
     }
 }
